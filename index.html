@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de Ventas</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">formulario de ventas</h1>
+    </header>
+    <main>
+        <form class="formulario" id="formulario">
+            <label for="nombre">nombre:</label>
+            <input class="inputFormulario" type="text" id="nombre" name="nombre" required>
+            <label for="apellido">apellido:</label>
+            <input class="inputFormulario" type="text" id="apellido" name="apellido" required>
+            <label for="dni">dni:</label>
+            <input class="inputFormulario" type="number" id="dni" name="dni" required>
+            <label for="numeroDeVentas">numero de ventas:</label>
+            <input class="inputFormulario" type="number" id="numeroDeVentas" name="numeroDeVentas" required>
+            <label for="total">total: $</label>
+            <input class="inputFormulario" type="number" id="total" name="total" required>
+            <div></div>
+            <button type="submit" class="btn" id="registrar">registrar</button>
+        </form>
+        <div>
+            <div class="buscador">
+                <label for="buscar">empleado:</label>
+                <input class="inputFormulario" type="number" id="buscar" name="buscar" placeholder="Ingrese el numero de DNI">
+                <button class="btn" id="btnBuscar">buscar</button>
+            </div>
+            <div class="registro">
+                <label for="">dni</label>
+                <label for="">nombre</label>
+                <label for="">apellido</label>
+                <label for="">numero de ventas</label>
+                <label for="">total</label>
+                <label for="">promedio</label>
+                <label class="inputRegistro" type="text" id="mostrarDni"></label>
+                <label class="inputRegistro" type="text" id="mostrarNombre"></label>
+                <label class="inputRegistro" type="text" id="mostrarApellido"></label>
+                <label class="inputRegistro" type="text" id="mostrarNumeroDeVentas"></label>
+                <label class="inputRegistro" type="text" id="mostrarTotal"></label>
+                <label class="inputRegistro" type="text" id="promedio"></label>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
