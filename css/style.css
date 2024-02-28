@@ -1,4 +1,5 @@
 
+/*reseteo general*/
 * {
     margin: 0;
     padding: 0;
@@ -6,33 +7,40 @@
     /*border: 1px solid red;*/
 }
 
+/*estilo para el body*/
 body {
     background-color: #f9f9f970;
 }
 
+
+/*posición del titulo*/
 header {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 4rem;
 }
 
-.titulo {
+/*estilo del titulo*/
+header .titulo {
     font-size: 2rem;
     text-transform: uppercase;
 }
 
+/*posición de los elementos en el main*/
 main {
     display: grid;
     grid-template-columns: 400px 1fr;
 }
 
+/*posición de los elementos en el form*/
 .formulario {
     display: grid;
     grid-template-columns: 170px 170px;
     gap: 0.5rem 0;
 }
 
-label {
+/*estilo de los label*/
+.formulario label {
     padding: 0.5rem 0.4rem;
     height: 30px;
     text-transform: uppercase;
@@ -41,12 +49,14 @@ label {
     text-align: center;
 }
 
+/*estilo de los input del formulario*/
 .inputFormulario {
     padding: 0.5rem 0.4rem;
     border-radius: 0.5rem;
     height: 30px;
 }
 
+/*estilo de los botones*/
 button {
     padding: 0.5rem 0.5rem;
     border-radius: 0.5rem;
@@ -55,15 +65,18 @@ button {
     font-weight: bold;
 }
 
+/*posición del buscador*/
 .buscador {
     padding-bottom: 4rem;
 }
 
+/*posición de los elementos registro*/
 .registro {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+/*estilo del registro donde se muestan los vendedores*/
 .inputRegistro {
     width: 160px;
     height: 30px;
@@ -73,6 +86,8 @@ button {
     border-left: none;
     border-right: none;
 }
+
+/*dispoción de los elementos en una vista móvil*/
 @media screen and (max-width: 400px){
     main {
         display: grid;
